@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "colorgrade",
+  "version": "${version}",
+  "name": "ColorGrade",
+  "description": "Ustawianie gammy, kontrastu, jasności, nasycenia i kolorów obrazu w Minecraft.",
+  "authors": ["Ty"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.colorgrade.ColorGradeClient"]
+  },
+  "mixins": [
+    { "config": "colorgrade.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
